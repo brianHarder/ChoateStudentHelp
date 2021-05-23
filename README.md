@@ -54,11 +54,11 @@ MIT
 ## Documentation
 Here, the functions will be briefly described and the parameters, in terms of their syntax and what they do, will be explained.
 
-Function #1: Math
+**Function #1: Math**
 
 This class performs 6 distinct math operations that would be helpful to a high school student. 
 
-	Sub-Function #1: infinite_limit
+<ins>Sub-Function #1: infinite_limit</ins>
 
 This sub-function evaluates limits to infinity using the rules of the limit equalling 0 when the highest power is in the denominator, infinity or negative infinity when the highest power is in the numerator, and the ratio of the coefficients when the highest powers in the numerator and denominator are equal.
 
@@ -72,7 +72,6 @@ Parameter #2: denominator
 - The syntax for this parameter is the same as for the numerator.
 
 <ins>Sub-Function #2: substitution_limit</ins>
-	
 
 This sub-function evaluates limits with direct substitution. However, the function will not compute limits that cannot be solved with this method.
 
@@ -89,7 +88,7 @@ Parameter #3: x_val
 - This is the x value to which the limit approaches. It will be substituted in for “x” in the numerator and denominator expressions.
 - This parameter is a string for the x value desired, so something like “3” would work.
 
-	Sub-Function #3: quadratic_formula
+<ins>Sub-Function #3: quadratic_formula</ins>
 	
 This sub-function finds the roots of a quadratic equation by using the quadratic formula (-b ± √(b2-4ac))/2a. Real and imaginary zeros can be computed.
 
@@ -105,7 +104,7 @@ Parameter #3: c
 - This is the constant term in the quadratic equation.
 - This parameter is inputted as an integer.
 
-	Sub-Function #4: Pascal_triangle
+<ins>Sub-Function #4: Pascal_triangle</ins>
 
 This sub-function returns an expanded binomial that is raised to a given power by using the binomial theorem.
 
@@ -117,7 +116,7 @@ Parameter #2: expression
 - This is the binomial that will be expanded via Pascal’s triangle.
 - Being a binomial, only two terms are given in the expression: an x term and a constant. They are formatted like the expressions in infinite_limit, with exponents marked by **, spaces between all the terms, and constants written out as multiplication (7 * x). The parameter overall is a string.
 
-	Sub-Function #5: sequences
+<ins>Sub-Function #5: sequences</ins>
 
 This sub-function returns the nth term of an arithmetic or geometric sequence by using the formulas t1 + d(n-1) and t1 * rn-1, respectively.
 
@@ -137,7 +136,7 @@ Parameter #4: arithmetic
 - This expresses whether or not the sequence is arithmetic, with True meaning it is.
 - This parameter is inputted as a boolean, so either True or False.
 
-	Sub-Function #6: series
+<ins>Sub-Function #6: series</ins>
 
 This sub-function returns the sum of an arithmetic, geometric, or infinite geometric series by using the formulas n(t1 + tn)/2, t1(1-rn)/(1-r), and t1/(1-r), respectively.
 
@@ -165,7 +164,7 @@ Parameter #6: infinite
 - This expresses whether or not the series is infinite (|r| < 1) and only applies for geometric series.
 - This parameter is inputted as a boolean, so either True or False.
 
-Function #2: standardizedTest
+**Function #2: standardizedTest**
 
 This class performs simulations to return the average score by guessing every question on either the SAT or the ACT.
 
