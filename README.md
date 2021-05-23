@@ -71,8 +71,8 @@ Parameter #2: denominator
 - This is the denominator of the fraction whose limit to infinity is being solved. Constants can also be inputted instead of expressions; for example, the denominator can just be “1” for a non-rational expression
 - The syntax for this parameter is the same as for the numerator.
 
-
-		Sub-Function #2: substitution_limit
+<ins>Sub-Function #2: substitution_limit</ins>
+	
 
 This sub-function evaluates limits with direct substitution. However, the function will not compute limits that cannot be solved with this method.
 
