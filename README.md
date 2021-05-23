@@ -66,6 +66,7 @@ Parameter #1: numerator
 - This is the numerator of the fraction whose limit to infinity is being solved. 
 - This is inputted as a string with spaces between all the terms. The variable is x, exponents are written with **, and coefficients are expressed as constants with a * sign and the variable following it. 
 - Example: “-1 * x**3 + 3 * x**2 - 4”
+- 
 Parameter #2: denominator 
 - This is the denominator of the fraction whose limit to infinity is being solved. Constants can also be inputted instead of expressions; for example, the denominator can just be “1” for a non-rational expression
 - The syntax for this parameter is the same as for the numerator.
@@ -73,77 +74,95 @@ Parameter #2: denominator
 	Sub-Function #2: substitution_limit
 
 This sub-function evaluates limits with direct substitution. However, the function will not compute limits that cannot be solved with this method.
+
 Parameter #1: numerator 
-This is the numerator of the fraction whose limit to infinity is being solved. 
-This is inputted as a string with spaces between all the terms. The variable is x, exponents are written with **, and coefficients are expressed as constants with a * sign and the variable following it.  
-Example: “-1 * x**3 + 3 * x**2 - 4”
+- This is the numerator of the fraction whose limit to infinity is being solved. 
+- This is inputted as a string with spaces between all the terms. The variable is x, exponents are written with **, and coefficients are expressed as constants with a * sign and the variable following it.  
+- Example: “-1 * x**3 + 3 * x**2 - 4”
+ 
 Parameter #2: denominator 
-This is the denominator of the fraction whose limit to infinity is being solved. Constants can also be inputted instead of expressions; for example, the denominator can just be “1” for a non-rational expression
-The syntax for this parameter is the same as for the numerator.
+- This is the denominator of the fraction whose limit to infinity is being solved. Constants can also be inputted instead of expressions; for example, the denominator can just be “1” for a non-rational expression
+- The syntax for this parameter is the same as for the numerator.
+
 Parameter #3: x_val
-This is the x value to which the limit approaches. It will be substituted in for “x” in the numerator and denominator expressions.
-This parameter is a string for the x value desired, so something like “3” would work.
+- This is the x value to which the limit approaches. It will be substituted in for “x” in the numerator and denominator expressions.
+- This parameter is a string for the x value desired, so something like “3” would work.
 
 	Sub-Function #3: quadratic_formula
 	
 This sub-function finds the roots of a quadratic equation by using the quadratic formula (-b ± √(b2-4ac))/2a. Real and imaginary zeros can be computed.
+
 Parameter #1: a
-This is the coefficient of the squared term in the quadratic equation, such as the 3 in 3x2. 
-This parameter is inputted as an integer.
+- This is the coefficient of the squared term in the quadratic equation, such as the 3 in 3x2. 
+- This parameter is inputted as an integer.
+
 Parameter #2: b
-This is the coefficient of the term with x to the first power in the quadratic equation. 
-This parameter is inputted as an integer.
+- This is the coefficient of the term with x to the first power in the quadratic equation. 
+- This parameter is inputted as an integer.
+
 Parameter #3: c
-This is the constant term in the quadratic equation.
-This parameter is inputted as an integer.
+- This is the constant term in the quadratic equation.
+- This parameter is inputted as an integer.
 
 	Sub-Function #4: Pascal_triangle
 
 This sub-function returns an expanded binomial that is raised to a given power by using the binomial theorem.
+
 Parameter #1: power
-This is the exponent to which the binomial is raised.
-This parameter is given as an integer.
+- This is the exponent to which the binomial is raised.
+- This parameter is given as an integer.
+
 Parameter #2: expression
-This is the binomial that will be expanded via Pascal’s triangle.
-Being a binomial, only two terms are given in the expression: an x term and a constant. They are formatted like the expressions in infinite_limit, with exponents marked by **, spaces between all the terms, and constants written out as multiplication (7 * x). The parameter overall is a string.
+- This is the binomial that will be expanded via Pascal’s triangle.
+- Being a binomial, only two terms are given in the expression: an x term and a constant. They are formatted like the expressions in infinite_limit, with exponents marked by **, spaces between all the terms, and constants written out as multiplication (7 * x). The parameter overall is a string.
 
 	Sub-Function #5: sequences
 
 This sub-function returns the nth term of an arithmetic or geometric sequence by using the formulas t1 + d(n-1) and t1 * rn-1, respectively.
+
 Parameter #1: t1
-This is the first term of the sequence.
-This is given as an integer.
+- This is the first term of the sequence.
+- This is given as an integer.
+
 Parameter #2: r
-This is the common difference or ratio of the sequence.
-This is given as an integer.
+- This is the common difference or ratio of the sequence.
+- This is given as an integer.
+
 Parameter #3: n
-This parameter is the number (position) of the term being found.
-This is given as an integer.
+- This parameter is the number (position) of the term being found.
+- This is given as an integer.
+
 Parameter #4: arithmetic 
-This expresses whether or not the sequence is arithmetic, with True meaning it is.
-This parameter is inputted as a boolean, so either True or False.
+- This expresses whether or not the sequence is arithmetic, with True meaning it is.
+- This parameter is inputted as a boolean, so either True or False.
 
 	Sub-Function #6: series
 
 This sub-function returns the sum of an arithmetic, geometric, or infinite geometric series by using the formulas n(t1 + tn)/2, t1(1-rn)/(1-r), and t1/(1-r), respectively.
+
 Parameter #1: t1
-This is the first term of the series.
-This is given as an integer.
+- This is the first term of the series.
+- This is given as an integer.
+
 Parameter #2: tn
-This is the nth term of the series.
-This is given as an integer.
+- This is the nth term of the series.
+- This is given as an integer.
+
 Parameter #3: r
-This is the common difference or ratio of the series.
-This is given as an integer.
+- This is the common difference or ratio of the series.
+- This is given as an integer.
+
 Parameter #4: n
-This parameter is the number (position) of the term being found.
-This is given as an integer.
+- This parameter is the number (position) of the term being found.
+- This is given as an integer.
+
 Parameter #5: arithmetic 
-This expresses whether or not the series is arithmetic, with True meaning it is.
-This parameter is inputted as a boolean, so either True or False.
+- This expresses whether or not the series is arithmetic, with True meaning it is.
+- This parameter is inputted as a boolean, so either True or False.
+
 Parameter #6: infinite 
-This expresses whether or not the series is infinite (|r| < 1) and only applies for geometric series.
-This parameter is inputted as a boolean, so either True or False.
+- This expresses whether or not the series is infinite (|r| < 1) and only applies for geometric series.
+- This parameter is inputted as a boolean, so either True or False.
 
 Function #2: standardizedTest
 
