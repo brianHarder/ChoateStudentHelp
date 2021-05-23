@@ -185,33 +185,33 @@ Parameter #2: answer
 This sub-function returns the score one would get by guessing every question on the ACT, either by randomizing their answers or choosing the same one every time. 10,000 trials are performed. The math section of this exam has 5 answer questions, so modifications were made from the SAT function.
 
 Parameter #1: same_answer
--This parameter expresses whether or not the same answer is to be chosen for every question in the simulation. True indicates that the same answer will be chosen every time.
--This is inputted as a boolean, so either True or False.
+- This parameter expresses whether or not the same answer is to be chosen for every question in the simulation. True indicates that the same answer will be chosen every time.
+- This is inputted as a boolean, so either True or False.
 
 Parameter #2: math_answer
--This parameter is the answer that is to be chosen for all the math questions in the case that same_answer is true.
--This is inputted as an integer from 1 to 5, representing A, B, C, D, and E, respectively. 
+- This parameter is the answer that is to be chosen for all the math questions in the case that same_answer is true.
+- This is inputted as an integer from 1 to 5, representing A, B, C, D, and E, respectively. 
 
 Parameter #3: other_answer
--This parameter is the answer that is to be chosen on all sections except math in the case that same_answer is true.
--This is inputted as an integer from 1 to 4, representing A, B, C, and D, respectively. 
+- This parameter is the answer that is to be chosen on all sections except math in the case that same_answer is true.
+- This is inputted as an integer from 1 to 4, representing A, B, C, and D, respectively. 
 
 <ins>Function #3: stocks</ins>
 
 This function returns the current price and displays a graph of the price over a time interval for a given stock.
 
 Parameter #1: ticker
--This is the ticker symbol for the stock. 
--It is inputted as a string, such as “AMZN”.
+- This is the ticker symbol for the stock. 
+- It is inputted as a string, such as “AMZN”.
 
 Parameter #2: start
--This is the start date for the interval over which the stock’s price will be graphed.
--This parameter is given as a string of the year, month, and day that are separated by dashes. Zeroes are added for single digit months or days, and no spaces are included.
--Example: “2016-04-26”  (April 26th, 2016)
+- This is the start date for the interval over which the stock’s price will be graphed.
+- This parameter is given as a string of the year, month, and day that are separated by dashes. Zeroes are added for single digit months or days, and no spaces are included.
+- Example: “2016-04-26”  (April 26th, 2016)
 
 Parameter #3: end
--This is the end date for the interval over which the stock’s price will be graphed.
--This parameter is given as a string of the year, month, and day that are separated by dashes. Zeroes are added for single digit months or days, and no spaces are included.
+- This is the end date for the interval over which the stock’s price will be graphed.
+- This parameter is given as a string of the year, month, and day that are separated by dashes. Zeroes are added for single digit months or days, and no spaces are included.
 
 <ins>Function #4: fortune_teller</ins>
 
@@ -222,60 +222,60 @@ This function is a game that is designed to be similar to the paper origami fort
 This function returns how long it would take to walk, on average, between two buildings on the Choate campus. A fairly comprehensive list of buildings is available, and the result can be a decimal or separated into minutes and seconds.
 
 Parameter #1: building1
--This parameter is the first building in the pair used for calculating the walking time. 
--This is inputted as a string with the building name typed exactly as it is in the dictionary.
+- This parameter is the first building in the pair used for calculating the walking time. 
+- This is inputted as a string with the building name typed exactly as it is in the dictionary.
 
 Available buildings: 
--Memorial House
--Hill House
--Squire Stanley
--Sally Hart Lodge
--Chapel
--WJAC
--Colony Hall
--PMAC
--Steele Hall
--Lanphier Center
--Carl Icahn Science Center
--Humanities Building
--Andrew Mellon Library
--St. John Hall
--Tenney/Bernhard
--Archbold
--CK/McCook
--Pratt Health Center
--Pierce
--Woodhouse/Combination
--Logan Munroe
--Hunt Tennis Center
--Atwater/Mead
--Spencer
+- Memorial House
+- Hill House
+- Squire Stanley
+- Sally Hart Lodge
+- Chapel
+- WJAC
+- Colony Hall
+- PMAC
+- Steele Hall
+- Lanphier Center
+- Carl Icahn Science Center
+- Humanities Building
+- Andrew Mellon Library
+- St. John Hall
+- Tenney/Bernhard
+- Archbold
+- CK/McCook
+- Pratt Health Center
+- Pierce
+- Woodhouse/Combination
+- Logan Munroe
+- Hunt Tennis Center
+- Atwater/Mead
+- Spencer
 
 Parameter #2: building2
--This parameter is the second building in the pair used for calculating the walking time. 
--This is inputted as a string with the building name typed exactly as it is in the dictionary. 
+- This parameter is the second building in the pair used for calculating the walking time. 
+- This is inputted as a string with the building name typed exactly as it is in the dictionary. 
 
 Parameter #3: seconds
--This parameter determines if the output will be given as an integer of minutes with a decimal (2.25) or a string of minutes and seconds (2 minutes and 15 seconds). True will run the second option of a string with minutes and seconds separated.
--This is inputted as a boolean, so either True or False.
+- This parameter determines if the output will be given as an integer of minutes with a decimal (2.25) or a string of minutes and seconds (2 minutes and 15 seconds). True will run the second option of a string with minutes and seconds separated.
+- This is inputted as a boolean, so either True or False.
 
 <ins>Function #6: visual_design</ins>
 
 This function displays an interesting, randomized visual design using the PIL library. There are 3 options for the image design to be created: a spiraling shape, a glut of circles, or 4 colored sections separated in a unique way.
 
 Parameter #1: vertices
--This is the number of vertices of the regular polygon that would be used only for option #1. For example, 4 would create a spiral of squares.
--This parameter is given as a whole number larger than 3.
+- This is the number of vertices of the regular polygon that would be used only for option #1. For example, 4 would create a spiral of squares.
+- This parameter is given as a whole number larger than 3.
 
 Parameter #2: layers
--This parameter is used in different ways for the various options to elaborate the image. In the spiral design, the color is changed every time the iteration is divisible by layers. For option #2, the number of circles drawn equals layers. Option #3 uses layers to determine how many rectangles are drawn; it is the same for the horizontal and vertical directions. The actual number of rectangles is given by 1000/layers. 
--This is given as an integer that divides evenly into 1000.
+- This parameter is used in different ways for the various options to elaborate the image. In the spiral design, the color is changed every time the iteration is divisible by layers. For option #2, the number of circles drawn equals layers. Option #3 uses layers to determine how many rectangles are drawn; it is the same for the horizontal and vertical directions. The actual number of rectangles is given by 1000/layers. 
+- This is given as an integer that divides evenly into 1000.
 
 Parameter #3: colors
--This is all the possible colors that could be used in the image. Depending on the option, one or many of these colors may be used.
--This parameter is inputted as a list of all the colors, which can be represented as RGB tuples or strings like “red”. 
+- This is all the possible colors that could be used in the image. Depending on the option, one or many of these colors may be used.
+- This parameter is inputted as a list of all the colors, which can be represented as RGB tuples or strings like “red”. 
 
 Parameter #4: option
--This parameter determines which of the 3 visual designs will be displayed.
--This is given as an integer from 1 to 3, representing the 3 options.
+- This parameter determines which of the 3 visual designs will be displayed.
+- This is given as an integer from 1 to 3, representing the 3 options.
 
