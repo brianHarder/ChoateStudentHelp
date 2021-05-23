@@ -61,6 +61,7 @@ This class performs 6 distinct math operations that would be helpful to a high s
 	Sub-Function #1: infinite_limit
 
 This sub-function evaluates limits to infinity using the rules of the limit equalling 0 when the highest power is in the denominator, infinity or negative infinity when the highest power is in the numerator, and the ratio of the coefficients when the highest powers in the numerator and denominator are equal.
+
 Parameter #1: numerator 
 - This is the numerator of the fraction whose limit to infinity is being solved. 
 - This is inputted as a string with spaces between all the terms. The variable is x, exponents are written with **, and coefficients are expressed as constants with a * sign and the variable following it. 
