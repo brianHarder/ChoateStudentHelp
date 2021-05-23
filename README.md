@@ -52,7 +52,7 @@ These modules, that do not come pre-installed with Python, are used in various f
 MIT
 
 ## Documentation
-In this document, the functions will be briefly described and the parameters, in terms of their syntax and what they do, will be explained.
+Here, the functions will be briefly described and the parameters, in terms of their syntax and what they do, will be explained.
 
 Function #1: Math
 
@@ -72,7 +72,7 @@ Parameter #2: denominator
 - The syntax for this parameter is the same as for the numerator.
 
 
-Sub-Function #2: substitution_limit
+		Sub-Function #2: substitution_limit
 
 This sub-function evaluates limits with direct substitution. However, the function will not compute limits that cannot be solved with this method.
 
