@@ -67,8 +67,8 @@ Parameter #1: numerator
 - This is inputted as a string with spaces between all the terms. The variable is x, exponents are written with **, and coefficients are expressed as constants with a * sign and the variable following it. 
 - Example: “-1 * x**3 + 3 * x**2 - 4”
 Parameter #2: denominator 
-This is the denominator of the fraction whose limit to infinity is being solved. Constants can also be inputted instead of expressions; for example, the denominator can just be “1” for a non-rational expression
-The syntax for this parameter is the same as for the numerator.
+- This is the denominator of the fraction whose limit to infinity is being solved. Constants can also be inputted instead of expressions; for example, the denominator can just be “1” for a non-rational expression
+- The syntax for this parameter is the same as for the numerator.
 
 	Sub-Function #2: substitution_limit
 
