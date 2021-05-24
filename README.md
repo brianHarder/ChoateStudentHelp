@@ -35,7 +35,7 @@ python3 -m pip install ChoateStudentHelp
 
 ## Libraries Used
 
-These modules, that do not come pre-installed with Python, are used in various functions of choateStudentHelper.
+These modules, that do not come pre-installed with Python, are used in various functions of ChoateStudentHelp.
 
 | module | function |
 | ------ | ------ |
