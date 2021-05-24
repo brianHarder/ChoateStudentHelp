@@ -2,7 +2,7 @@
 
 
 
-This Python module includes 6 distinct functions that I thought would be useful in my life as a student of Choate Rosemary Hall.
+This Python module includes 6 distinct functions that I thought would be useful or interesting in my life as a student of Choate Rosemary Hall.
 
 
 ## Functions
