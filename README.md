@@ -1,8 +1,8 @@
 # ChoateStudentHelp
-## python module with 6 functions for Choate students
 
 
-This module includes 6 distinct functions that I thought would be useful in my life as a student of Choate Rosemary Hall.
+
+This Python module includes 6 distinct functions that I thought would be useful in my life as a student of Choate Rosemary Hall.
 
 
 ## Functions
